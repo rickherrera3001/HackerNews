@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct HackerNewsRMApp: App {
@@ -13,5 +14,6 @@ struct HackerNewsRMApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [ModelDatabase.self])
     }
 }

@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00AB2C22BC4E73E00DC30F0 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AB2C12BC4E73E00DC30F0 /* NewsDetailView.swift */; };
 		D00FAF5B2BBE0520007707BB /* HackerNewsRMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FAF5A2BBE0520007707BB /* HackerNewsRMApp.swift */; };
 		D00FAF5D2BBE0520007707BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FAF5C2BBE0520007707BB /* ContentView.swift */; };
 		D00FAF5F2BBE0521007707BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00FAF5E2BBE0521007707BB /* Assets.xcassets */; };
 		D00FAF622BBE0521007707BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00FAF612BBE0521007707BB /* Preview Assets.xcassets */; };
+		D01FB5712BBE33DF000E3D48 /* ListNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FB5702BBE33DF000E3D48 /* ListNewsView.swift */; };
+		D01FB5732BBE3740000E3D48 /* ListNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FB5722BBE3740000E3D48 /* ListNewsViewModel.swift */; };
+		D01FB5752BBE3772000E3D48 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FB5742BBE3772000E3D48 /* ApiClient.swift */; };
+		D0B28EC12BBF64A200759DC0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B28EC02BBF64A200759DC0 /* News.swift */; };
+		D0E52C9A2BC5D5F000559BA6 /* ModelDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E52C992BC5D5F000559BA6 /* ModelDataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D00AB2C12BC4E73E00DC30F0 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		D00FAF572BBE0520007707BB /* HackerNewsRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00FAF5A2BBE0520007707BB /* HackerNewsRMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsRMApp.swift; sourceTree = "<group>"; };
 		D00FAF5C2BBE0520007707BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D00FAF5E2BBE0521007707BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00FAF612BBE0521007707BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D01FB5702BBE33DF000E3D48 /* ListNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsView.swift; sourceTree = "<group>"; };
+		D01FB5722BBE3740000E3D48 /* ListNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsViewModel.swift; sourceTree = "<group>"; };
+		D01FB5742BBE3772000E3D48 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		D0B28EC02BBF64A200759DC0 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		D0E52C992BC5D5F000559BA6 /* ModelDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 		D00FAF592BBE0520007707BB /* HackerNewsRM */ = {
 			isa = PBXGroup;
 			children = (
+				D01FB5782BBE38E0000E3D48 /* Models */,
+				D01FB5772BBE37AB000E3D48 /* Network */,
+				D01FB5762BBE378C000E3D48 /* Modules */,
 				D00FAF5A2BBE0520007707BB /* HackerNewsRMApp.swift */,
 				D00FAF5C2BBE0520007707BB /* ContentView.swift */,
 				D00FAF5E2BBE0521007707BB /* Assets.xcassets */,
@@ -65,6 +80,41 @@
 				D00FAF612BBE0521007707BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D01FB5762BBE378C000E3D48 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D0B28EC22BBF997100759DC0 /* HomeNews */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D01FB5772BBE37AB000E3D48 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D01FB5742BBE3772000E3D48 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D01FB5782BBE38E0000E3D48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0B28EC02BBF64A200759DC0 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0B28EC22BBF997100759DC0 /* HomeNews */ = {
+			isa = PBXGroup;
+			children = (
+				D01FB5722BBE3740000E3D48 /* ListNewsViewModel.swift */,
+				D01FB5702BBE33DF000E3D48 /* ListNewsView.swift */,
+				D00AB2C12BC4E73E00DC30F0 /* NewsDetailView.swift */,
+				D0E52C992BC5D5F000559BA6 /* ModelDataBase.swift */,
+			);
+			path = HomeNews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +133,8 @@
 			dependencies = (
 			);
 			name = HackerNewsRM;
+			packageProductDependencies = (
+			);
 			productName = HackerNewsRM;
 			productReference = D00FAF572BBE0520007707BB /* HackerNewsRM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +163,8 @@
 				Base,
 			);
 			mainGroup = D00FAF4E2BBE0520007707BB;
+			packageReferences = (
+			);
 			productRefGroup = D00FAF582BBE0520007707BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B28EC12BBF64A200759DC0 /* News.swift in Sources */,
+				D01FB5712BBE33DF000E3D48 /* ListNewsView.swift in Sources */,
 				D00FAF5D2BBE0520007707BB /* ContentView.swift in Sources */,
+				D0E52C9A2BC5D5F000559BA6 /* ModelDataBase.swift in Sources */,
+				D00AB2C22BC4E73E00DC30F0 /* NewsDetailView.swift in Sources */,
 				D00FAF5B2BBE0520007707BB /* HackerNewsRMApp.swift in Sources */,
+				D01FB5732BBE3740000E3D48 /* ListNewsViewModel.swift in Sources */,
+				D01FB5752BBE3772000E3D48 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
